@@ -19,33 +19,33 @@
 
 Clone the repository
 
-```bash
+```cmd
 https://github.com/Atanu-Manna2003/Loan_Approval_Prediction
 ```
 ### STEP 01- Create a conda environment after opening the repository
 
-```bash
-conda create -n mlproj python=3.8 -y
+```cmd
+python -m venv myenv
 ```
 
-```bash
-conda activate mlproj
+```cmd
+myenv\Scripts\Activate
 ```
 
 
 ### STEP 02- install the requirements
-```bash
+```cmd
 pip install -r requirements.txt
 ```
 
 
-```bash
+```cmd
 # Finally run the following command
 python app.py
 ```
 
 Now,
-```bash
+```cmd
 open up you local host and port
 ```
 
@@ -69,7 +69,7 @@ python script.py
 
 Run this to export as env variables:
 
-```bash
+```cmd
 
 set MLFLOW_TRACKING_URI=https://dagshub.com/Atanu-Manna2003/Loan_Approval_Prediction.mlflow
 set MLFLOW_TRACKING_USERNAME=Atanu-Manna2003
