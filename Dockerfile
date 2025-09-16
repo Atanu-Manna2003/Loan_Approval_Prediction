@@ -1,4 +1,4 @@
-FROM python:3.8-slim-buster
+FROM python:3.8
 
 WORKDIR /app
 COPY . /app
@@ -8,6 +8,8 @@ RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Install AWS CLI using pip (no apt needed)
-RUN pip install awscli --upgrade
+# RUN pip install awscli --upgrade
+# port
+EXPOSE 5000
 
-CMD ["python3", "app.py"]
+CMD ["python", "./app.py"]
